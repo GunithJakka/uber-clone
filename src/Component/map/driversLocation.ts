@@ -7,7 +7,7 @@ export let driversLocations:any =  []
 const currentAddress = store.getState().root.mapInitialPosition;
 const { lat, lng } = currentAddress;
 
-const proxy = "https://mighty-island-92084.herokuapp.com/"
+const proxy = ""
 const  config:object = {
   method: 'get',
   url: ` ${proxy}https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${lat}%2C${lng}&radius=3000&type=restaurants&keyword=hospital&key=${GOOGLE_API_KEY}`,

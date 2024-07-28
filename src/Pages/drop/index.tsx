@@ -70,7 +70,7 @@ const Drop:React.FC = () => {
     dispatch(updateDestinationDisable(true));
     dispatch(updatePickup(myOrigin));
     dispatch(updateDestination(myEnd));
-    const proxy = "https://mighty-island-92084.herokuapp.com/"
+    const proxy = ""
     axios(`${proxy}https://maps.googleapis.com/maps/api/distancematrix/json?origins=${origin}&destinations=${end}&units=imperial&key=${GOOGLE_API_KEY}`, {
       method: "GET",
       headers: {

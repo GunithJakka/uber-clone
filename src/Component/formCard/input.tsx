@@ -53,7 +53,7 @@ const [browserSupported, setBrowserSupported] = useState(false);
  const {data,isFetching, isSuccess} = useGetAddressQuery<any>(currentCordinate);
 
   const fetchPredictions = (input:string) => {
-    const proxy = "https://mighty-island-92084.herokuapp.com/"
+    const proxy = ""
     setIsLoading(true);
     axios(`${proxy}https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${input}&components=country:${countryCode !==null?countryCode:'NG' }&key=${GOOGLE_API_KEY}`, {
       method: "GET",
